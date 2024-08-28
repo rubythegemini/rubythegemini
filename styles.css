@@ -1,0 +1,68 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgb(255, 0, 0));
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 4rem;
+    color: #ff0000;
+    margin: 0 auto;
+    opacity: 0;
+    animation: fadeInTitle 2s ease-in-out forwards;
+    white-space: nowrap;
+}
+
+.buttons-container {
+    margin-top: 50px;
+    opacity: 0;
+    animation: fadeInButtons 3s ease-in-out forwards;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button {
+    display: block;
+    padding: 15px 30px;
+    margin: 10px 0;
+    font-size: 1.2rem;
+    color: rgb(255, 255, 255); /* Text color set to black */
+    background-color: transparent; /* Button background set to transparent */
+    border: 2px solid rgb(255, 0, 0); /* Button outline set to red */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    width: 200px; /* Adjust the width as needed */
+    text-align: center;
+}
+
+.button:hover {
+    background-color: transparent; /* Maintain transparent background on hover */
+    color: rgb(255, 0, 0); /* Change text color to red on hover */
+    transform: scale(1.05);
+}
+
+.quicksand-custom {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+}
+
+@keyframes fadeInTitle {
+    to { opacity: 1; }
+}
+
+@keyframes fadeInButtons {
+    to { opacity: 1; }
+}
